@@ -5,7 +5,7 @@
   padding: 29px 14px 14px;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid #f3f3f3;
+  border: $card-border;
 
   &--area {
     margin: 0 48px 50px 0;
@@ -23,6 +23,11 @@
     margin-bottom: 45px;
     width: 160px;
     height: 134px;
+
+    &:hover {
+      transition-duration: $transition-duration;
+      transform: scale(1.2);
+    }
   }
 
   &__name {
@@ -79,10 +84,11 @@
     background-color: $theme-color;
     border-radius: 5px;
     border: 1px solid $theme-color;
-  }
-  
-  &__buy-link:hover {
-    color: $theme-color;
-    background-color: #fff;
+
+    &:hover {
+      color: $theme-color;
+      background-color: #fff;
+      transition-duration: $transition-duration;
+    }
   }
 }
