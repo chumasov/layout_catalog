@@ -6,7 +6,6 @@
   flex-wrap: wrap;
   justify-content: center;
   border: $card-border;
-  transition-duration: $transition-duration;
 
   &--area {
     margin: 0 48px 50px 0;
@@ -85,11 +84,11 @@
     background-color: $theme-color;
     border-radius: 5px;
     border: 1px solid $theme-color;
+    transition-duration: $transition-duration;
 
     &:hover {
       color: $theme-color;
       background-color: #fff;
-      transition-duration: $transition-duration;
     }
   }
 }
