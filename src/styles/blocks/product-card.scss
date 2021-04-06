@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   justify-content: center;
   border: $card-border;
+  transition-duration: $transition-duration;
 
   &--area {
     margin: 0 48px 50px 0;
@@ -23,9 +24,9 @@
     margin-bottom: 45px;
     width: 160px;
     height: 134px;
+    transition-duration: $transition-duration;
 
     &:hover {
-      transition-duration: $transition-duration;
       transform: scale(1.2);
     }
   }
