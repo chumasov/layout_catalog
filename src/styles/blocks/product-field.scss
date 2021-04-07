@@ -1,0 +1,8 @@
+.product-field {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 48px;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

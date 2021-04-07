@@ -5,11 +5,7 @@
   padding: 29px 14px 14px;
   flex-wrap: wrap;
   justify-content: center;
-  border: 1px solid #f3f3f3;
-
-  &--area {
-    margin: 0 48px 50px 0;
-  }
+  border: $card-border;
 
   &:nth-child(4n + 4) {
     margin-right: 0;
@@ -23,6 +19,12 @@
     margin-bottom: 45px;
     width: 160px;
     height: 134px;
+    transition: transform $transition-duration;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
   }
 
   &__name {
@@ -79,10 +81,12 @@
     background-color: $theme-color;
     border-radius: 5px;
     border: 1px solid $theme-color;
-  }
-  
-  &__buy-link:hover {
-    color: $theme-color;
-    background-color: #fff;
+    transition: color $transition-duration,
+      background-color $transition-duration;
+
+    &:hover {
+      color: $theme-color;
+      background-color: #fff;
+    }
   }
 }
